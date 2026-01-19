@@ -1,19 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Tech Wave A02</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
 </head>
-<body>
+
+<body class="inter-font">
     <header>
+        <section>
+            <nav class="navbar">
+                <div>
+                    <h3 class="text-4xl font-bold">Tech<span
+                            class="bg-linear-to-r from-yellow-500 via-fuchsia-600 to-violet-700 text-transparent bg-clip-text inline-block">Wave</span>
+                    </h3>
+
+                </div>
+                <div class="nav-menu">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Episodes</a></li>
+                    <li><a href="">Host</a></li>
+                </div>
+
+                <div>
+                    <button id="btn-sub"
+                        class="h-10 pl-10 pr-10 rounded-full text-base font-semibold bg-linear-to-r from-yellow-400 via-fuchsia-500 to-violet-600">Subscribe</button>
+                </div>
+            </nav>
+        </section>
+        <section id="banner">
+            <div class="banner-container">
+                <div id="banner-hero">
+                    <div class="banner-circle">
+                        <img src="./images/hero-circle.png" alt="">
+                    </div>
+                    <div class="microphone">
+                        <img src="./images/microphone.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-6xl font-extrabold text-white mb-8">TechWave</h3>
+                    <p class="text-base font-normal text-white mb-8">Your daily dose of tech insights, productivity
+                        hacks, and personal growth</p>
+                </div>
+                <div>
+                    <button
+                        class="h-10 pl-10 pr-10 rounded-full text-base font-semibold bg-linear-to-r from-yellow-400 via-fuchsia-500 to-violet-600">Listen
+                        to Spotify</button>
+                    <button id="btn-banner-sub"
+                        class="h-10 pl-10 pr-10 rounded-full text-base text-green-500 font-semibold">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <section class="about-podcast">
+            <div class="about-description">
+                <h3 class="text-4xl font-bold text-white pt-20 pb-8">About the Podcast</h3>
+                <p class="text-base font-normal text-white mb-8">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work,
+                and share stories of personal growth from industry leaders.
+                <br>
+                <br>
+                Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            </div>
+            <div class="ratings">
+                <div class="rating-count">
+                    <h3>150K+</h3>
+                    <p>Monthly Listeners</p>
+                </div>
+                <div class="rating-count">
+                    <h3>200+</h3>
+                    <p>Monthly Listeners</p>
+                </div>
+                <div class="rating-count">
+                    <h3>4.9*</h3>
+                    <p>Monthly Listeners</p>
+                </div>
+                <div class="rating-count">
+                    <h3>50+</h3>
+                    <p>Monthly Listeners</p>
+                </div>
+            </div>
+        </section>
+
 
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>

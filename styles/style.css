@@ -1,0 +1,122 @@
+@import "tailwindcss"
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+  /* background-color: #1A0B2E; */
+}
+
+/* nav related styles */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #1A0B2E;
+    color: white;
+    height: 5.7rem;
+    align-items: center;
+}
+
+/* .navbar h3 .wave{
+  background: linear-gradient(90deg, #F7E93F, #9100F8);
+  
+} */
+.navbar #btn-sub{
+  cursor: pointer;
+}
+.nav-menu{
+  display: flex;
+  list-style: none;
+  gap: 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.nav-menu a{
+  text-decoration: none;
+}
+
+/* banner styles */
+#banner{
+  background-image: url(../images/hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.banner-container{
+  /* padding: 20px 0; */
+  text-align: center;
+  align-items: center;
+}
+#banner-hero{
+  position: relative;
+  top: 50px;
+  right: -80px;
+}
+
+.banner-container .banner-circle{
+  width: 80%;
+  position: relative;
+}
+.banner-container .microphone{
+  position: relative;
+  top: -260px;
+  right: -120px;
+}
+#btn-banner-sub{
+  border: 1px solid #00FF88;
+}
+
+/* about podcast */
+.about-podcast{
+  background-color: #1A0B2E;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.about-description{
+  max-width: 1200px;
+  margin: auto;
+  padding: 8px 70px;
+  align-items: center;
+  text-align: center;
+}
+.ratings{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding-bottom: 10px;
+}
+.rating-count h3{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #00FF88;
+}
+.rating-count p{
+  font-size: 16;
+  color: white;
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .navbar{
+    display: block;
+  }
+  
+.navbar .nav-menu, #btn-sub{
+  visibility: hidden;
+}
+}
