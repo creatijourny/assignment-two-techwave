@@ -10,7 +10,7 @@
   font-style: normal;
 }
 body{
-  /* background-color: #1A0B2E; */
+  background-color: #1A0B2E;
 }
 
 /* nav related styles */
@@ -134,7 +134,7 @@ body{
   grid-row: span 2;
   background-color: rgba(53, 17, 101, 0.4);
   border-radius: 30px;
-  padding: 30px 20px;
+  padding: 2rem;
   align-items: center;
   
 }
@@ -142,29 +142,41 @@ body{
   grid-column: span 2;
   background-color: rgba(53, 17, 101, 0.4);
   border-radius: 30px;
-  padding: 30px 20px;
+  padding: 2rem;
   align-items: center;
 }
 .device{
   grid-column: span 2;
   background-color: rgba(53, 17, 101, 0.4);
   border-radius: 30px;
-  padding: 30px 20px;
+  padding: 2rem;
   align-items: center;
 }
 .community{
   grid-column: span 2;
   background-color: rgba(53, 17, 101, 0.4);
   border-radius: 30px;
-  padding: 30px 20px;
+  padding: 2rem;
   align-items: center;
 }
 .resources{
   grid-column: span 1;
   background-color: rgba(53, 17, 101, 0.4);
   border-radius: 30px;
-  padding: 30px 20px;
+  padding: 2rem;
   align-items: center;
+}
+/* featured episodes styles */
+.feature-episodes{
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.feature-video{
+ background-color: #250D44;
+ border-radius: 20px;
 }
 
 /* Meet tha Host styles */
@@ -176,8 +188,8 @@ body{
 .section-descriotion{
   display: flex;
   background-color: rgba(53, 17, 101, 0.4);
-  max-width: 1200px;
-  margin: 0 auto;
+  /* max-width: 1200px;
+  margin: 0 auto; */
   border-radius: 30px;
   /* padding: 20px; */
   align-items: center;
@@ -188,9 +200,33 @@ body{
 
 }
 
-.social-link{
+.meet-host .social-link{
   display: flex;
   gap: 10px;
+  padding-bottom: 4rem;
+}
+
+/* Footer section styles */
+#footer{
+  max-width: 1600px;
+  margin: 4rem auto;
+  /* background-color: #1A0B2E; */
+  background-image: url(../images/footer-bg.png);
+  padding: 4rem;
+  
+}
+.footer-container{
+  
+  /* margin-top: 2.5rem; */
+  padding: 4rem;
+}
+.footer-container .social{
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 2rem;
+  align-items: center;
+  
 }
 
 
