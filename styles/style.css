@@ -77,8 +77,18 @@ body{
   top: -260px;
   right: -120px;
 }
+.banner-container .badge{
+  position: relative;
+  top: 60px;
+  right: -50px;
+  z-index: 1;
+}
+
 #btn-banner-sub{
   border: 1px solid #00FF88;
+}
+#btn-badge{
+  background-color: #00FF88;
 }
 
 /* about podcast */
@@ -185,7 +195,7 @@ body{
   max-width: 1600px;
   margin: 0 auto;
 }
-.section-descriotion{
+.section-meet-host{
   display: flex;
   background-color: rgba(53, 17, 101, 0.4);
   /* max-width: 1200px;
@@ -194,7 +204,7 @@ body{
   /* padding: 20px; */
   align-items: center;
 }
-.section-descriotion .host-image{
+.section-meet-host .host-image{
   width: 70%;
   padding-left: 2rem;
 
@@ -202,9 +212,10 @@ body{
 
 .meet-host .social-link{
   display: flex;
-  gap: 10px;
+  gap: 20px;
   padding-bottom: 4rem;
 }
+
 
 /* Footer section styles */
 #footer{
@@ -229,13 +240,84 @@ body{
   
 }
 
+/* Responsive styles */
 
 @media screen and (max-width: 576px) {
   .navbar{
     display: block;
   }
-  
-.navbar .nav-menu, #btn-sub{
+  .navbar .nav-menu, #btn-sub{
   visibility: hidden;
 }
+.banner-container .banner-circle{
+  width: 70%;
+  height: 70%;
+}
+.banner-container .microphone{
+  width: 50%;
+  height: 50%;
+  position: relative;
+  top: -220px;
+  right: -90px;
+}
+
+.about-podcast .ratings{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  text-align: center;
+  padding-bottom: 10px;
+}
+.card-container{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 200px);
+  /* width: 100%;
+  height: 100%; */
+  padding: 1.25rem;
+  
+}
+.choose-techwave h3{
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+.feature-episodes{
+  display: block;
+  gap: 20px;
+  
+
+}
+.feature-video{
+  width: 22rem;
+  margin: 0;
+  padding: .25rem;
+}
+
+.host-image img{
+  width: 80%;
+}
+.section-meet-host{
+  display: block;
+  margin: 5px;
+  padding: 5px;
+}
+
+.footer-container .social{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  /* justify-content: center; */
+  gap: 1.25rem;
+  padding: 2rem;
+  /* align-items: center; */
+  }
+  .footer-container #techwave{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .footer-container #copyright p{
+    font-size: 14px;
+    font-weight: 200;
+    padding: 5px;
+   }
 }
