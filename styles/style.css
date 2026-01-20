@@ -249,6 +249,8 @@ body{
   .navbar .nav-menu, #btn-sub{
   visibility: hidden;
 }
+
+/* Responsive banner */
 .banner-container .banner-circle{
   width: 70%;
   height: 70%;
@@ -261,6 +263,9 @@ body{
   right: -90px;
 }
 
+
+/* Responsive about podcast */
+
 .about-podcast .ratings{
   display: grid;
   grid-template-columns: repeat(2, 2fr);
@@ -272,22 +277,18 @@ body{
   gap: 10px;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 200px);
-  /* width: 100%;
-  height: 100%; */
   padding: 1.25rem;
-  
 }
 .choose-techwave h3{
   font-size: 2rem;
   font-weight: bold;
-
 }
+
+/* Featured episodes */
 .feature-episodes{
   display: block;
   gap: 20px;
-  
-
-}
+ }
 .feature-video{
   width: 22rem;
   margin: 0;
@@ -306,11 +307,12 @@ body{
 .footer-container .social{
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  /* justify-content: center; */
   gap: 1.25rem;
   padding: 2rem;
-  /* align-items: center; */
+ 
   }
+
+  /* Footer */
   .footer-container #techwave{
     font-size: 30px;
     font-weight: bold;
